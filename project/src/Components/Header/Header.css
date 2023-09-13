@@ -1,0 +1,140 @@
+.header{
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    padding-top: 20px ;
+    /* background-image: url(https://www.decorilla.com/online-decorating/wp-content/uploads/2016/07/find-an-interior-designer.jpg);
+    background-size: cover; */
+    /* background-position: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 2px solid grey;
+    /* box-shadow: 0 8px 8px 0 gray; */
+    
+}
+
+/* ----------NAVBAR LEFT ------------ */
+.left{
+    display: flex;
+    justify-content: left;
+    align-items:flex-start;
+    width: 70%;
+    /* margin: 20px 0; */
+}
+
+.star img{
+    width: 100px;
+    height: 20px;
+    margin: 15px 20px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+
+
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 3px 10px;
+}
+
+.navbar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+
+.navbar ul li a:hover{
+    color: rgb(234, 105, 127);
+}
+
+.searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    /* border: 1px solid black; */
+    height: 35px;
+    border-radius: 20px;
+    background: rgb(238, 232, 232);
+}
+
+.searchBar input{
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    padding: 5px 5px;
+    background: transparent;
+    width: 250px;
+}
+
+.searchBar button{
+    outline: none;
+    width: fit-content;
+    height: fit-content;
+    background: transparent;
+    border: transparent;
+    
+}
+
+.searchBar button svg{
+    color: black;
+}
+
+
+/* -------------CENTER -------------- */
+/* .center{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 20%;
+}
+
+.center p{
+    color: #fff;
+    margin-top: 10px;
+} */
+
+
+/* -------------NAVBAR RIGHT ---------- */
+.right{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    width: 30%;
+}
+
+.btn-btn,.btn-call{
+    display: flex;
+    justify-content: right;
+    /* align-items: flex-end; */
+    margin-bottom: 20px;
+    /* margin: 8px; */
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+/* .btn button{
+    width: fit-content;
+    color: black;
+    background: transparent;
+    outline: 0;
+    border: 0;
+    /* margin-right: 15px;
+    margin-bottom: 5px; */
+/* } */ 
+
