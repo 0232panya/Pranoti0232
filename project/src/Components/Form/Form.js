@@ -24,14 +24,14 @@ function Form(){
 
     useEffect(() =>{
         console.log(formerror)
-        if(Object.keys(formerror).length == 0 && isSubmit){
+        if(Object.keys(formerror).length === 0 && isSubmit){
             console.log(formvalue);
         }
-    },[formerror])
+    },[formerror,formvalue,isSubmit])
 
     const validate = (value) =>{
         const error = {};
-        const regex = /^[^$s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+        // const regex = /^[^$s@]+@[^\s@]+\.[^\s@]{2,}$/i;
         if(!value.Fname){
             error.Fname = "First name is required";
         }
@@ -57,7 +57,7 @@ function Form(){
     return(
         <div className='form'>
             {/* <pre>{JSON.stringify(formvalue,undefined,2)}</pre> */}
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='form'>
             <h2>Register Form</h2> 
             <div className='input-group'> 
             <label>First Name : </label>           
@@ -74,6 +74,7 @@ function Form(){
             <label>Last Name : </label>  
                 <input type='text'
                 name='Lname'
+                className='input'
                  placeholder='Enter Last Name'
                  value={formvalue.Lname} 
                  onChange={handleValue}
@@ -85,6 +86,7 @@ function Form(){
             <label>Email : </label>  
                 <input type='email'
                     name='email'
+                    className='input'
                  placeholder='Enter Email'
                  value={formvalue.email} 
                  onChange={handleValue}
@@ -96,6 +98,7 @@ function Form(){
             <label>password: </label>  
                 <input type='password'
                 name='password'
+                className='input'
                  placeholder='Enter password'
                  value={formvalue.password} 
                  onChange={handleValue}
@@ -107,14 +110,15 @@ function Form(){
             <label>password: </label>  
             <input type='password'
             name='repassword'
+            className='input'
              placeholder='Re-Enter password'
              value={formvalue.repassword} 
              onChange={handleValue}
               />
             </div>
-            <p>{formerror.repassword}</p>
+            <p className='p'>{formerror.repassword}</p>
 
-            <button className='btn'>Submit</button>
+            <button className='form-btn'>Submit</button>
             </form>
         </div>
     );

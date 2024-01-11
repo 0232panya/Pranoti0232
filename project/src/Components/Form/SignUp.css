@@ -1,0 +1,113 @@
+
+.signUp-Form{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    background: whitesmoke;
+}
+
+.signupForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width:70%;
+    border-radius: 12px;
+    /* border: 1px solid black; */
+    background: white;
+}
+
+/* -------------------- LOG IN FORM ------------------- */
+
+.login-formPage{
+    width: 45%;
+    /* border-right: 1px solid black; */
+    margin: 30px 30px;
+}
+
+.login-formPage .login-formPage-p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 550;
+}
+
+.form-LoginPage{
+    border: none;
+}
+
+.form-LoginPage input{
+    width: 100%;
+    border-bottom: 1px solid rgb(174, 171, 171);
+    margin-bottom: 20px;
+    padding: 5px 15px;
+}
+
+.form-LoginPage input::placeholder{
+    color: rgb(174, 171, 171);
+}
+
+.inputForm-div {
+   display: inline-flex;
+   justify-content: right;
+   width: 100%;
+}
+
+.inputForm-div p {
+    width: 80% ;
+    display: flex;
+    margin: 0 10px;
+    color: #4b4949;
+    justify-content: left;
+    /* align-items: flex-end; */
+}
+
+.form-LoginPage .inputForm-div svg{
+    width: 20%;
+    display: flex;
+    justify-content: right;
+    fill: rgb(47, 47, 245);
+    /* align-items: flex-end; */
+}
+
+.form-LoginPage-btn{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px ;
+    padding: 10px 10px;
+    border-radius: 30px;
+    background: #ef5034;
+    border: 1px solid #ef5034;
+}
+
+.form-LoginPage-btn:hover{
+    background: #e44225;
+}
+
+
+
+/* -------------------- SIGN UP FORM -------------------- */
+
+.signUp-formPage{
+    width: 45%;
+}
+
+.signUp-FormPage-p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 550;
+    margin-top: -140px;
+}
+
+.signUpFormPage{
+    border: none;
+}
+
+.signupForm input{
+    width: 100%;
+    border-bottom: 1px solid rgb(174, 171, 171);
+    margin-bottom: 20px;
+    padding: 5px 15px;
+}

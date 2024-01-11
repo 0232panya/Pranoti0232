@@ -1,0 +1,67 @@
+
+[
+    {
+       "image" : "https://static.zingyhomes.com/projectImages/user_4876/_MG_5478.JPG",
+       "cardName" :"Kitchen"
+    },
+
+    {
+        "image" : "https://interiorstylehunter.com/wp-content/uploads/2016/09/Mel-Yates_Shalini-Misra_NW6_A_033-Re.jpg",
+        "cardName" : "Living Room"
+    },
+
+    {
+        "image" : "https://i.pinimg.com/originals/e3/43/53/e3435338f43e5031fd08f7b1bbecd42c.jpg",
+        "cardName" : "BedRoom"
+    },
+
+    {
+        "image" : "https://www.decorandstyle.co.uk/wp-content/uploads/2016/03/capa-C%C3%B3pia9.jpg",
+        "cardName" : "Dinning room"
+    },
+
+    {
+        "image" : "https://i.pinimg.com/originals/5e/ce/22/5ece22573972b24b4da3669c8c430219.jpg",
+        "cardName" : "Home Stairs"
+    },
+
+    {
+        "image" : "https://s3-ap-south-1.amazonaws.com/designcafe-dev/wp-content/uploads/2019/11/17055926/multi-hued-stylish-lighting-for-balcony-design-1024x1024.jpg",
+        "cardName" : "Balcony"
+    },
+
+    {
+        "image" : "https://i1.wp.com/magzhouse.com/wp-content/uploads/2019/11/Nice-Rooftop-Terrace-Design-Ideas-15.jpg?ssl=1",
+        "cardName" : "Terrace"
+    },
+
+    {
+        "image" : "https://i.pinimg.com/originals/92/ae/28/92ae28d2f2794677824d01b74c3ae383.jpg",
+        "cardName" : "Garden"
+    },
+     
+    {
+        "image" : "https://www.contemporist.com/wp-content/uploads/2020/09/modern-grey-bathroom-grey-bathtub-wood-vanity-220920-1048-01.jpg",
+        "cardName" : "BathRoom"
+    },
+
+    {
+        "image" : "https://th.bing.com/th/id/R.b5a312c85a035d23bc5fb2f2203b5b8b?rik=FCWibSn2wIPZwA&riu=http%3a%2f%2fwww.home-designing.com%2fwp-content%2fuploads%2f2009%2f03%2fkids-room-design3.jpg&ehk=75FugFZQTBcpEaBGEi%2bD4E8%2bZyE5UEQteZ8o3OyZ1mc%3d&risl=&pid=ImgRaw&r=0",
+        "cardName" : "kids BedRoom"
+    },
+
+    {
+        "image" : "https://i.pinimg.com/originals/ca/9e/00/ca9e00e445a24d08d4b8fd18d0e68573.jpg",
+        "cardName" : "Wardrobe"
+    },
+
+    {
+        "image" : "https://www.greshamroofing.com/wp-content/uploads/2020/07/file.jpg",
+        "cardName" : "Out Door decor"
+    },
+
+    {
+        "image" : "https://th.bing.com/th/id/OIP.rG7i5FEJd3PCPNMxAm788AAAAA?pid=ImgDet&rs=1",
+        "cardName" : "Home Gym Room"
+    }
+]

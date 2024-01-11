@@ -1,0 +1,87 @@
+
+.Cards{
+    width: 300px;
+    height: 350px;
+    margin: 20px 10px;
+    border-radius: 17px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.Cards a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.card{
+    outline: 0;
+    border: 0;
+    /* border: 1px solid black; */
+    border-radius: 18px;
+    box-shadow:  0.1px 2px 2px 2px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.5s;
+    /* margin: 10px; */
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow:  2px 2px 8px 1px rgba(0,0,0, 0.3) ;
+    .card-button{background: rgb(246, 209, 217);}
+    .card-button svg{color: crimson;}
+}
+
+.card img{
+    width: 300px;
+    height: 250px;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px; 
+}
+
+.card p{
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.card-button{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 7px;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+}
+
+.card p svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.card p svg:hover{
+    color:  rgb(220, 40, 23);
+}
+
+.info{
+    text-align: center;
+}
+
+
+/* ------------------------------ */
+
+.imagePge-Cards{
+    width: 300px;
+    height: 300px;
+    border-radius: 18px;
+    margin: 20px 0;
+}
+
+.imagePge-card img{
+    width: 300px;
+    height: 300px;
+    border-radius: 18px;
+}

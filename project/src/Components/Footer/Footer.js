@@ -28,7 +28,7 @@ function Footer(){
                     </svg>
                 </div>
             </div>
-            <div className="fright">
+            {/* <div className="fright">
                <form>
                     <h3>Contact Us</h3>
                     <div className="nameInput">
@@ -42,7 +42,7 @@ function Footer(){
                         </div>
                     </div>
                     <div className="email">
-                        <label>Email<span>*</span></label><br/>
+                        <label>Email<>*</></label><br/>
                         <input type="text" placeholder="Enter Email" />
                     </div>
                     <div>
@@ -52,7 +52,34 @@ function Footer(){
                     <button path="./#">Submit</button>
                    
                </form>                
+            </div> */}
+            <div className='fright'> 
+                <div className='fright-first-col'>
+                    <p className='fright-p-Title'>Company</p>
+                    <p>about</p>
+                    <p>Press Info</p>
+                    <p>Career</p>
+                    <p>Terms & Privacy</p>
+                    <p>Contact Us</p>
+                    <p>CopyRight & Trademark</p>
+                </div>
+                <div className='fright-second-col'>
+                    <p className='fright-p-Title'>Design</p>
+                    <p>Interior Home Design</p>
+                    <p>Commercial Interiors</p>
+                    <p>Stores</p>
+                </div>
+                <div className='fright-third-col'>
+                    <p className='fright-p-Title'>Contact</p>
+                    <p><div style={{fontWeight:"550"}}>Email -</div></p>
+                        <a href='/#'>interiordesign@gmail.com</a>
+                    
+                    <p><div style={{fontWeight:"550"}}>Phone No. -</div></p>
+                        <a href='/#'>1800-102-4433</a>
+                    
+                </div>
             </div>
+
         </div>
     );
 }

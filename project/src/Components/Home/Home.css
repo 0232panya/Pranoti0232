@@ -6,12 +6,17 @@
     box-sizing: border-box;
 }
 
+.home{
+    margin-bottom: 50px;
+}
+
 .banner{
     width: 100%;
-    height: 100vh;
-    position: relative;
+    height: 90vh;
+    display: flex;
+    /* position: relative; */
     overflow: hidden;
-    
+    margin-bottom: 50px;
 }
 
 .slider{
@@ -53,7 +58,7 @@
     line-height: 25px;
 }
 
-button{
+.banner-btn{
     width: 150px;
     padding: 10px 0;
     text-align: center;
@@ -67,7 +72,7 @@ button{
     transition: background 0.5s;
 }
 
-button:hover{
+.banner-btn:hover{
     background: transparent;
     border: 2px solid #333;
 }
@@ -82,13 +87,240 @@ button:hover{
     border: 2px solid #fe7250;
 }
 
-/* -----------Catagory ---------------- */
-.Catagory h1{
+.popup-logIn-Title{
+    display: flex;
+    /* justify-content: center; */
+    width: 90%;
+}
+
+.popup-logIn-Title p{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 18px;
+    margin-left: 50px;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.popup-logIn-Title button{
+    display: flex;
+    justify-content: right;
+    /* width: 5%; */
+    width: 35px;
+    height: 35px;
+    padding: 12px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    margin-right: -30px;
+    margin-top: 10px;
+    border: none;
+    background: transparent;
+    /* font-weight: 600; */
+    color: #727070;
+    font-size: 18px;
+}
+
+.popup-logIn-Title button:hover{
+    background: white;
+    color: black;
+}
+
+
+
+.popup-logIn-form{
+    height: 413.5px;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: 20px;
+
+}
+
+
+/* -------- modal -box --------- */
+
+.modal-box{
+    width: 50%;
+}
+
+
+
+/* ------------------ Interior Design Consult Cards ------------------------ */
+
+/* .type-int-Card{
+    width: 100%;
+    height: 700px;
+    background: whitesmoke;
+    padding-top: 30px;
+}
+
+.type-int-Head .type-head{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.type-int-Head .type-p{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.type-Main-Container{
+    width: 100%;
+    height: 400;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.type-Container{
+    width: 300px;
+    height: 400px;
+    box-shadow:  0.1px 2px 2px 2px rgba(0, 0, 0, 0.1) ;
+    border-radius: 18px;
+    margin: 0 10px;
+}
+
+.type-Container img{
+    width: 300px;
+    height: 220px;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+} */
+
+/* ------------ WHY CHOOSE US INFINITY CAROUSEL ---------------- */
+
+.infinity-slide-box{
+    width: 100%;
+    height: 350px;
+    background: whitesmoke;
+    padding: 30px 0;
+   margin-top: 30px;
+}
+
+.infinity-slide-title{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0 40px 0;
+    font-weight: 550;
+}
+
+.wrap-slide{
+    /* display: flex; */
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.wrap-slide:before,
+.wrap-slide:after{
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    background: whitesmoke;
+    content: "";
+    z-index: 2;
+}
+
+.wrap-slide:before{
+    left: 0;
+}
+
+.wrap-slide:after{
+    right: 0;
+}
+
+.infinity-slide-cards{
+    display: inline-flex;
+    animation: 10s slide infinite linear;
+}
+
+.infinity-cards{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 12px;
+    margin: 0 20px;
+}
+
+.infinity-cards img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    width: 70px;
+    height: 70px;
+    margin: 10px 40px;
 }
+
+.infinity-cards p{
+   height: 30%;
+    text-align: center;
+}
+
+.wrap-slide:hover .infinity-slide-cards{
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+/* -----------Catagory ---------------- */
+.Catagory p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px;   */
+}
+
+.Catagory .cat-Head-p{
+    font-size: 40px;
+    font-weight: 400;
+    color: #3e3d3d;
+    margin-bottom: 5px;
+}
+
+.Catagory .cat-p{
+    font-size: 20px;
+    
+}
+
+.cards-row{
+    margin: 40px 5%;   
+}
+
+.card-link{
+    text-decoration: none;
+}
+
+
+
+/* .btn-S{
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: rgb(59,110,213);
+    border: 1px solid rgb(59,110,213) ;
+    color: #fff;
+}
+
+.btn-S:hover{
+    color: #333;
+} */
 
 /* .Catagory h1{
     display: flex;
@@ -120,7 +352,7 @@ button:hover{
     justify-content: center0;
 } */
 
-.img-slider{
+/* .img-slider{
     position: relative;
     overflow: hidden;
     padding: 26px;
@@ -153,40 +385,237 @@ button:hover{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     /* border-radius: 15px; */
-    width: 201px;
+    /* width: 201px;
     height: 240px;
 }
 
 .img-slider .bord:hover{
     /* border: 1px solid black; */
-     box-shadow: 4px 4px 4px 4px gray;  
+    /* box-shadow: 4px 4px 4px 4px gray;  
     
+}  */
+    
+
+/* ----------------------- ESTIMATE CALCULATION OF DECORATION  -------------------------- */
+
+
+/* ----------------- TITLE -------------- */
+
+.cal-Head{
+    display: grid;
+    place-items: center;
 }
 
-/* .btn-pre,.btn-next{
-    border: none;
+.rotating-Words{
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 500;
+    height: 50px;
+}
+
+.second-sent{
+    overflow: hidden;
+}
+
+span{
+    display: block;
+    height: 100%;
+    margin-left: 10px;
+    color:  rgb(220, 40, 23);
+    animation: spin_word 6s infinite;
+}
+
+@keyframes spin_word {
+    10%{
+        transform: translateY(-112%);
+    }
+
+    25%{
+        transform: translateY(-100%);
+    }
+
+    30%{
+        transform: translateY(-212%);
+    }
+
+    50%{
+        transform: translateY(-200%);
+    }
+
+    60%{
+        transform: translateY(-312%);
+    }
+
+    75%{
+        transform:translateY(-300%);
+    }
+
+    85%{
+        transform: translateY(-20%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.cal-p{
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+/* ----------------- CARD ------------------- */
+
+.calculation-Cards{
+    width: 100%;
+    height: 350px;
+    padding: 20px 70px;
+}
+
+.cal-Card{
+    width: 400px;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow:  0.1px 2px 2px 2px rgba(0, 0, 0, 0.1) ;
+    transition: background 0.5s transform 0.5s;
+}
+
+.cal-Card:hover{
+    transform: translateY(-10px);
+    box-shadow:  2px 2px 8px 1px rgba(0,0,0, 0.3) ;
+}
+
+.iCon{
+    display: flex;
+}
+
+.cal-Icon1{
+    margin: 20px;
+    display: flex;
+    width: 50%;
+}
+
+.cal-Icon1 div{
+    background: rgb(226, 223, 223);
+    border-top-right-radius: 50px 25px;
+    border-top-left-radius: 40px 50px;
+    border-bottom-left-radius: 50px 30px;
+    border-bottom-right-radius: 40px 50px;
+}
+
+.cal-Icon1 img{
+    width: 80px;
+    height: 80px;
+}
+
+.cal-Icon2{
+    display: flex;
+    justify-content: right;
+    width: 50%;
+    margin: 20px;
+}
+
+.cal-Icon2 div{
+    width: 80px;
+    height: 80px;
+    background: rgb(226, 223, 223);
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.cal-Icon2 img{
     width: 60px;
     height: 60px;
-    position: absolute;
-    
+}
+
+.cal-Name{
+    margin: 20px 10px;
+    height: 70px;
+}
+
+.cal-Name .cal-p{
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.cal-btn{
     display: flex;
     justify-content: center;
-    align-items: center;
-    background: transparent;
+    margin: 10px;
 }
 
-.btn-next{
-    right: 0;
+.cal-btn button{
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+    outline: 0;
+    border: 0;
+    background:  rgb(220, 40, 23);
+    color: #fff;
 }
 
-.btn-next p,.btn-pre p{
-    font-size: 50px;
-    background-color: rgba(243, 228, 228, 0.292);
+.cal-btn button:hover{
+    background: rgb(199, 35, 20);;
+}
+
+.cal-btn button p{
+    margin-bottom: 0;
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .75px;
+    line-height: 24px;   
+}
+
+/* -----------------------------*/
+
+.collage-banner{
+    background: whitesmoke;
+}
+
+.carousel {
+    margin: 10px 80px;
+    display: flex;
+    padding: 50px 0;
+}
+
+.carousel-item{
+    margin: 20px;
+}
+
+.carousel-item img{
+    margin: 5px;
     border-radius: 10px;
-    box-shadow: 0 0 10px 2px black;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+}
+
+.carousel button svg{
+    color: black;
+    border-radius: 50%;
+    padding: 10px;
+    background: white;
+}
+
+
+/* ----------------- */
+
+.asked-que-title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 550;
+    margin: 50px 0;
+}
+
+.accordion{
+    margin: 0 20%;
+}
+
+.accordion-item{
+}

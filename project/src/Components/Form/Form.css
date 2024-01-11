@@ -8,8 +8,8 @@
     background-color: #36abf4;
 }
 
-form{
-    border: 2px solid black;
+.form{
+    /* border: 2px solid black; */
     padding: 30px;
     width: 500px;
     min-height: 420px;
@@ -34,7 +34,7 @@ h2{
     flex-basis: 25%;
 }
 
-.input-group input{
+.input-group .input{
     width: 70%;
     height: 30px;
     margin: 10px;
@@ -45,7 +45,7 @@ h2{
     color: #333;
 }
 
-.btn{
+.form-btn{
     border: 1px solid blue;
     outline: none;
     padding: 8px 15px;
@@ -57,11 +57,11 @@ h2{
     color: #fff;
 }
 
-.btn:hover{
+.form-btn:hover{
     background: green;
 }
 
-p{
+.p{
     color: red;
     margin: auto;
     display: flex;
@@ -70,3 +70,71 @@ p{
     margin-top: -5px;
     margin-right: 20px;
 }
+
+/* --------------- LOGIN PAGE ---------------- */
+
+.form-Page{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.login-Form{
+    position: fixed;
+    top: 15%;
+    left: 35%;
+    width: 450px;
+    height: 570px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    align-items: center;
+    z-index: 2;
+}
+
+.login-Form .login-p{
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* border-bottom: 1px solid grey; */
+    box-shadow: 0 1.5px 1.5px 0 rgb(211, 208, 208);
+}
+
+.login-form-page{
+    border: none;
+    /* padding-top: -100px ; */
+    margin: auto;
+}
+
+.input-Teext{
+    border: 1px solid grey;
+    display: flex;
+    width: 100%;
+    margin: 25px 5px;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.login-Form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px 30px;
+    border: 2px solid #ef5034;
+    background: #ef5034;
+    border-radius: 22px;
+    margin-bottom: 20px;
+}
+
+.login-TnC{
+    margin: 0 25px;
+    text-align: center;
+}
+
