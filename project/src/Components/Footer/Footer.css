@@ -99,10 +99,20 @@
     margin: 15px 0 !important;
 }
 
+/* .fright-p-Title .i{
+    transition: transform 5s;
+}
+
+.fright-p-Title .i:hover{
+    transform: translateX(-10px);
+    cursor: pointer;
+} */
+
 .fright p{
     font-size: 14px;
     margin: 8px 0;
-    font-weight: 540;
+    font-weight: 500;
+    transition: transform 1000ms;
 }
 
 .fright a{
@@ -111,7 +121,7 @@
 }
 
 .fright p:hover{
-    text-decoration: 2px solid underline;
+    transform: translateX(10px);
     cursor: pointer;
 }
 

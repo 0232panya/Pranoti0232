@@ -1,0 +1,92 @@
+
+
+
+.store_Location{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: white;
+}
+
+.store_Location_box{
+    width: 75%;
+    height: 178.5px;
+    border: 1px solid rgb(204, 204, 254);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    background: #f1f1f6;
+}
+
+.store_Location_Img_Box{
+    display: flex;
+    width: 50%;
+    height: fit-content;
+}
+
+.store_Location_smallImg{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin-left: 35%;
+    margin-top: 50px;
+    position: absolute;
+    z-index: 2;
+}
+
+.store_Location_Img_Box .store_Location_BackImg{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.store_Location_info_Box{
+    /* display: flex; */
+    width: 50%;
+    padding: 20px ;
+}
+
+.store_Location_info_Box div{
+    /* border: 1px solid black; */
+    text-align: left !important;
+    width: fit-content;
+    margin: 10px 7%;
+}
+
+.store_Location_info_Box p{
+    margin: 0;
+}
+
+.store_Location_info_Box div .store_Location_Info_Title{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.store_Location_Info_SubTitle{
+    /* font-size: 16px; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.store_Location_Info_Link{
+    margin-top: 15px !important;
+    /* font-size: 15px; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: crimson;
+}
+
+.Store_Location_link{
+    text-decoration: none;
+}

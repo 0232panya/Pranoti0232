@@ -4,13 +4,6 @@
     min-height: 100vh;
 }
 
-.top-banner{
-    margin: 50px 10%;
-    background: rgb(114, 36, 174);
-    height: 150px;
-    padding: 20px;
-}
-
 .banner-text{
     display: flex;
     justify-content: center;
@@ -19,18 +12,137 @@
     color: #fff;
 }
 
-.bold-text{
-    font-size: 25px;
+.banner-text img{
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    
+}
+
+.banner-text .professional_banner_Text{
+    width: 100%;
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4));
+    position: absolute;
+    top: 0;
+}
+
+.professional_banner_Content{
+    margin: 400px auto 0;
+    text-align: center;
+}
+
+.professional_banner_Content p{
+    margin: 0;
+}
+
+.banner-text .consultation_Title{
+    font-size: 60px;
+    margin-bottom: -10px;
+    font-family: "Work Sans", sans-serif;
     font-weight: 600;
 }
 
-.bottom-section{
+.consultation_p{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+}
+
+.professional_banner_Content .professional_banner_Button{
+    margin: 20px;
+    padding: 12px 50px;
+    border-radius: 25px;
+    border: 1px solid crimson;
+    background: rgb(239, 26, 68);
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+
+/* ------------------ MIDDLE SECTION ------------------ */
+
+.SearchViaCity{
+    margin: 50px;
+}
+
+.searchViaCity_{
     display: flex;
 }
 
+.searchViaCity_Title{
+    width: 50%;
+}
+
+.searchViaCity_Title p{
+    margin: 0;
+}
+
+.SearchViaCity_Title_Header{
+    font-size: 36px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+}
+
+.searchViaCity_Button{
+    width: 50%;
+    justify-content: right;
+    display: flex;
+    align-items: center;
+}
+
+.searchViaCity_Button .searchViaCity_Btn{
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 25px;
+    border-radius: 20px;
+    background: rgb(239, 26, 68);
+    border: none;
+    font-weight: 600;
+    color: #fff;
+}
+
+.searchViaCity_dropdown .dropdown button{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 3px;
+    padding: 10px 25px;
+    background: #fff;
+    color: black;
+    margin-top: 20px;
+    border: 0.5px solid grey;
+}
+
+.searchViaCity_dropdown p{
+    margin: 0;
+    margin-right: 30px;
+}
+
+/* .dropdown-menu{
+    width: 150px;
+} */
+
+
+/* --------------- STORE LOCATION ---------------- */
+
+.bottom-section{
+    display: flex;
+    margin: 30px 50px;
+}
+
+/* ------------------ LEFT ( MAP LOCATION ) -------------- */
+
 .left-section{
-    width: 30%;
+    width: 50%;
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.map_Location{
+     border-radius: 18px;
+     margin-top: 10px;
 }
 
 .left-section button{
@@ -50,9 +162,13 @@
     background: whitesmoke;
 }
 
+/* ------------------ RIGHT ( STORE ADDRESS ) ------------------- */
+
 .right-section{
-    width: 70%;
+    width: 50%;
+    height: 700px;
     padding: 40px;
+    overflow: scroll;
 }
 
 .professional-card{
@@ -60,21 +176,33 @@
     height: 250px;
     /* border: 1px solid black; */
     display: flex;
+    border-radius: 12px;
+    background: rgb(212, 209, 209);
 }
 
 .left-card{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
 }
 
 .left-card img{
-    width: 450px;
-    height: 240px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
 }
 
 .right-card{
     width: 50%;
     align-items: center;
     padding: 20px;
+}
+
+.right-info-card{
+    height: 70%;
 }
 
 .right-info-card svg{
@@ -86,15 +214,131 @@
     justify-content: center;
 }
 
-.right-button-card button{
-    margin: 10px;
-    padding: 7px 20px ;
+.right-button-card .contactUs_BTN{
+    margin: 10px 5px;
+    padding: 5px 15px ;
     border-radius: 18px;
-    border: 2px solid rgb(220, 202, 202)smoke;
+    border: 2px solid rgb(54, 54, 54);
     background: transparent;
 }
 
-.right-button-card button:hover{
-    background: whitesmoke;
+.whatsapp_svg_BTN{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+    margin: 10px 5px ;
+    border-radius: 15px;
+    border: 2px solid rgb(54, 54, 54);
+    background: transparent;
+    color: green;
 }
 
+.phone_svg_BTN{
+    margin: 10px 5px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 2px solid rgb(54, 54, 54);
+    background: transparent;
+}
+
+/* --------------------------------------- */
+
+.StoreLocation_cards{
+    width: 100%;
+    height: 600px;
+    background: whitesmoke;
+    padding: 50px 70px;
+}
+
+.StoreLocation_cards_Title .Cards_Header{
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+.cards_P{
+    font-size: 19px;
+    font-family:  "Work Sans", sans-serif;
+    font-weight: 500;
+}
+
+.StoreInfoCards{
+    height: 350px;
+    /* background-color: red; */
+    display: inline-flex;
+}
+
+.store_card{
+    width: 300px;
+    height: 350px;
+    margin: 0 40px 0 0;
+    border-radius: 8px;
+    background: white;
+}
+
+.store_card img{
+    width: 300px;
+    height: 180px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.storeCard_Info{
+    margin: 10px;
+    color: #4c4c4c;
+}
+
+.storeCard_Info_Header{
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "roboto", sans-serif;
+    color: black;
+}
+
+/* ---------------------------- */
+
+.carousal3d{
+    width: 100%;
+    height: 700px;
+}
+
+.carousal3d_Title{
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.carousal3d_Title p{
+    font-size: 40px;
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+}
+
+
+/* ------------------------------ */
+
+.PriceCalculator{
+    background-color: whitesmoke;
+    padding: 20px 0 50px;
+}
+
+.priceCalculator_Title{
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.priceCalculator_Title p{
+    margin: 0;
+}
+
+.priceCalculator_Header{
+    font-size: 40px;
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+}
+
+.priceCalculator_PTag{
+    font-size: 20px;
+}

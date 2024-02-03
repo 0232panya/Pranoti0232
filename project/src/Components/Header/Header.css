@@ -14,14 +14,14 @@
     background: white;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 5;
     /* box-shadow: 0 8px 8px 0 gray; */
 }
 
 .navBar.active{
     /* background: orange; */
     background: white;
-    box-shadow: 0 8px 8px 0 gray;
+    box-shadow: 0 3px 3px 0 rgb(164, 162, 162);
 }
 
 /* ----------NAVBAR LEFT ------------ */
@@ -161,7 +161,7 @@
 } */
 
 .searchBar{
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
@@ -169,21 +169,22 @@
     /* border: 1px solid black; */
     height: 35px;
     border-radius: 20px;
-    background: rgb(238, 232, 232);
+    background: rgb(239, 237, 237);
 }
 
 .searchBar input{
     outline: none;
     border-radius: 8px;
     border: none;
-    padding: 5px 15px;
+    color: #424141;
+    padding: 5px 20px;
     background: transparent;
-    width: 250px;
+    width: 300px;
 }
 
 .searchBar .s-btn{
     outline: 0;
-    padding-left: 12px;
+    padding-left: 14px;
     width: fit-content;
     height: fit-content;
     background: transparent;
@@ -193,6 +194,29 @@
 
 .searchBar button svg{
     color: black;
+}
+
+.serachbar_List{
+    width: 100%;
+    height: fit-content;
+    background-color:white;
+    color: black;
+    margin: 16px auto;
+}
+
+.serachbar_List div{
+    padding: 4px 30px;
+}
+
+.serachbar_List div:hover{
+    background-color: whitesmoke;
+}
+
+.serachbar_List div a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 5px;
 }
 
 
@@ -219,6 +243,15 @@
     margin-right: 25px;
 }
 
+.right .login-btn{
+    margin: 10px;
+}
+
+/* .right .dropdown a svg{
+    color: rgb(88, 88, 88);
+} */
+
+
 .dropdown button{
     display: flex;
     justify-content: center;
@@ -227,6 +260,7 @@
     border-radius: 26px;
     height: 35px;
     width: 60px;
+    
 }
 
 .dropdown button:hover{
@@ -237,19 +271,25 @@
     fill: rgb(82, 77, 77);
 }
 
+.right .dropdown ul{
+    width: 300px;
+    height: 80px;
+    padding: 15px 0;
+}
 
-
-/* .btn-btn,.btn-call{
-    display: flex;
-    justify-content: right;
-    margin-bottom: 20px;
-    padding: 5px 15px;
-    width: fit-content;
-    height: fit-content;
-    color: black;
+.right .dropdown ul li:hover{
     background: transparent;
-    margin-right: 15px;
-    border-radius: 18px;
-} */
+}
 
+.btn-call p{
+    margin: 0;
+    text-align: center;
+    padding: 8px 50px;
+    border: 1px solid crimson; 
+    border-radius: 20px;
+    color: rgb(245, 75, 109);
+}
 
+.btn-call p svg{
+    margin: 3px;
+}

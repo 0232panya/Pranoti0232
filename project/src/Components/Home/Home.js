@@ -1,24 +1,26 @@
 
 import './Home.css'
-//import { useState } from 'react';
+import { useState } from 'react';
 import Banner from '../Banner/Banner';
 import Card from '../Card/Card';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-
+import StoreLocation from '../Store_Location/StoreLocation';
 import { Link , Outlet } from 'react-router-dom'
+import PriceCalculator from '../Price_Calculator/PriceCalculator';
+import ImagePopUp from '../SmallImage/ImagePopUp';
 
-//import Header from '../Header/Header'
-//import Footer from '../Footer/Footer';
 
-
-function Home({image, showModal,setShowModal}){
+function Home({image}){
 
   // const [visible,setVisible] = useState(4);
 
     // function showMoreItem(){
     //   setVisible((prevValue) => prevValue + 4);
     // }
+
+    // Pop Up State =>
+    const [visibleModal, setVisibleModal] = useState(false);
 
 
     const responsive = {
@@ -44,10 +46,11 @@ function Home({image, showModal,setShowModal}){
 
     return(
         <div className='home'>
+          {/* <Header /> */}
           
           {/* -------------------TOP BANNER------------------- */}
 
-          <Banner  showModal={showModal} setShowModal={setShowModal}  />
+          <Banner  visibleModal={visibleModal} setVisibleModal={setVisibleModal}  />
 
 
         {/* ------------------- Interior Design Consult Cards ---------------------- */}
@@ -127,100 +130,22 @@ function Home({image, showModal,setShowModal}){
 
         {/* ---------------- ESTIMATE CALCULATION OF DECORATION ---------------------- */}
         <div>
-        <div className='cal-Head'>
-        <div className="rotating-Words">
-            <p>Get the estimate for your</p>            
-          <div className='second-sent'>
-            <span className='span'>Full Home</span>
-            <span className='span'>Kitchen</span>
-            <span className='span'>Wardrobe</span>
-            <span className='span'>BedRoom</span>
-          </div>
-        </div>
-            <p className='cal-p'>Calculate the approximate cost of doing up your home interiors</p>
-        </div>
-        
-        <div className='calculation-Cards row'>
 
-          <div className='cal-Card col-3'>
-            <div className='iCon'> 
-              <div className='cal-Icon1'>
-                <div>
-                  <img src='https://cdn-icons-png.flaticon.com/512/2607/2607259.png' alt="" />
-                </div>
-              </div>
-              <div className='cal-Icon2'>
-                <div>
-                  <img src='https://pic.onlinewebfonts.com/thumbnails/icons_453425.svg' alt="" />
-                </div>
-              </div>
+          <div className='cal-Head'>
+          <div className="rotating-Words">
+              <p>Get the estimate for your</p>            
+            <div className='second-sent'>
+              <span className='span'>Full Home</span>
+              <span className='span'>Kitchen</span>
+              <span className='span'>Wardrobe</span>
+              <span className='span'>BedRoom</span>
             </div>
-            <div className='cal-Name'>
-              <p className='cal-p'>Full Home Interior</p>
-              <p>Know the estimate price for your full home interior.</p>
-            </div>
-            <div className='cal-btn'>
-              <button><p>CALCULATE</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-              </button>
-            </div>
+          </div>
+              <p className='cal-p'>Calculate the approximate cost of doing up your home interiors</p>
           </div>
 
-          <div className='cal-Card col-3'>
-            <div className='iCon'>
-              <div className='cal-Icon1'>
-                <div>
-                  <img src='https://static.thenounproject.com/png/1539815-200.png'  alt=""/>
-                </div>
-              </div>
-              <div className='cal-Icon2'>
-                <div>
-                  <img src='https://pic.onlinewebfonts.com/thumbnails/icons_453425.svg' alt="" />
-                </div>
-              </div>
-            </div>
-            <div className='cal-Name'>
-              <p className='cal-p'>Kitchen</p>
-              <p>Get an approximate costing for your kitchen interior.</p>
-            </div>
-            <div className='cal-btn'>
-              <button><p>CALCULATE</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-              </button>
-            </div>
-          </div>
-          
-          <div className='cal-Card col-3'>
-            <div className='iCon'>
-              <div className='cal-Icon1'>
-                <div>
-                  <img src='https://static.thenounproject.com/png/1106414-200.png' alt="" />
-                </div>
-              </div>
-              <div className='cal-Icon2'>
-                <div>
-                  <img src='https://pic.onlinewebfonts.com/thumbnails/icons_453425.svg' alt="" />
-                </div>
-              </div>
-            </div> 
-            <div className='cal-Name'>
-              <p className='cal-p'>Wardrobe</p>
-              <p>Our rough math for your wardrobe.</p>
-            </div> 
-            <div className='cal-btn'>
-              <button><p>CALCULATE</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-              </button>
-            </div>
-          </div>
+          <PriceCalculator />
 
-        </div>
         </div>
 
                 {/* ------------------- WHY CHOOSE US INFINITY CAROUSEL------------------------- */}
@@ -291,6 +216,12 @@ function Home({image, showModal,setShowModal}){
               </div>
           </div>
           </div>
+        </div>
+
+        {/* --------------------------Store Location -------------------------------- */}
+
+        <div className='storeLocation'>
+          <StoreLocation /> 
         </div>
 
         {/* ----------------------- COLLAGE BANNER ----------------------------- */}
@@ -397,6 +328,12 @@ function Home({image, showModal,setShowModal}){
                 </div>
             </div>
 
+             {/* -------------- Footer Image Pop up Section ----------------- */}
+          <div className='footerImagePopUp'>
+            <ImagePopUp visibleModal={visibleModal} setVisibleModal={setVisibleModal} />
+          </div>
+
+        
     </div>
 
     );

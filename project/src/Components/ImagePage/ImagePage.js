@@ -12,8 +12,11 @@ function ImagePage(){
     const [page, setPage] = useState(1);
     const [totalPage, setTotalPage] = useState(0);
     const [isLoad, setIsLoad] = useState(false);
-
     const per_page = 28;
+
+    //POP-UP BOX USESTATE 
+    const [popUp, setPopUp] = useState([]);
+    const [popUpToggle, setPopUpToggle] = useState(false);
 
     const { cardName } = useParams();
 
@@ -29,10 +32,18 @@ function ImagePage(){
         })
     },[cardName,page]);
 
+    //POP-UP BOX ONCLICK FUNCTION
+     
+    const showPopUp = (value) =>{
+        setPopUp([value]);
+        setPopUpToggle(true);
+    }
+
 
     return (
-        <div className="imagePage-cards-row">
-            <div>{page}/ {totalPage}</div>
+        <div>
+            <div className="imagePage-cards-row">
+
             {
                 !isLoad ? <div className="row">
                 {
@@ -40,7 +51,9 @@ function ImagePage(){
                         <div key={key} className='imagePageCards col-3'>
                         <div className='imagePageCard'>
                             {/* <img src={value.urls.raw}  alt='images' /> */}
-                            <Cards data={value} />                            
+                            <button className="imagePageCard-buttons" onClick={() => showPopUp(value)}>
+                                <Cards data={value} /> 
+                            </button>                           
                         </div>
                     </div>
                     ))
@@ -54,8 +67,6 @@ function ImagePage(){
 
                
             <div className="pagination_buttons">
-                {/* {page > 1 && <button onClick={() =>setPage(page -1)}>Previous</button>}
-                {page < totalPage && <button onClick={() => setPage(page + 1)}>next</button>} */}
                 <nav aria-label="Page navigation example">
                     <ul class="pagination">
                         
@@ -88,38 +99,55 @@ function ImagePage(){
                     </ul>
                 </nav>
             </div>
-            {/* <div className="row">
-                {
-                    result.map((value,key) => (
-                        <div key={key} className='Cards col-3'>
-                        <div className='card'>
-                            <img src={value.urls.raw}  alt='images' />
-                        </div>
-                    </div>
-                    ))
-                }
-            </div> */}
-            {/* {
-                result.map((key,data)=>{
-                return(
-                    <div>
-                        <Cards key={key} data={data} />
-                    </div>
-                )})
-            } */}
 
-            {/* {
-                !image ? <h1>Loading...</h1> :
-                <div>
-                    {
-                        image.map((key,data)=>(
-                            <div>
-                                <Cards key={key} data={data} />
-                            </div>
-                        ))
-                    }
+            {
+               popUpToggle&& <div className="PopUp-Box" onClick={() => setPopUpToggle(false)}>
+                    <div className="popUp-Header">
+                        <button onClick={() => setPopUpToggle(false)}>x</button>
+                    </div>
+                    <div className="popUp-Body">
+                    <div className="popUp-Container">
+                      {
+                        popUp.map((pop) =>{
+                            return (
+                                <div className="popUp-content"> 
+                                    <div className="popUp-profile-Info">
+                                        <div className="popUp-profileimg">
+                                            <img src={pop.user.profile_image.small} alt="" />
+                                            <div className="popUp-profile_Name">
+                                                <p className="PopUp-profile-name">{pop.user.name}</p>
+                                                <p>{pop.user.username}</p>
+                                            </div>
+                                        </div>
+
+                                        <div className="popUp-profile-likes">
+                                            <button>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                                                </svg>
+                                            </button>
+                                            <button>+</button>
+                                            <button>
+                                                <a href={pop.urls.raw} download>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                                                </svg>
+                                                </a>
+                                            </button>
+                                        </div>    
+                                    </div>
+                                    <img src={pop.urls.full} className="popUp-content-fullImg" alt="" />
+                                   
+                                </div>
+                            )
+                        })
+                      }
+                    </div>
                 </div>
-            } */}
+            </div>}
+        
+            </div>
         </div>
     );
 }

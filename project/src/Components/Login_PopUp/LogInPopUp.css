@@ -1,0 +1,106 @@
+
+.Login_popUp{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0,0,0,0.5);
+    padding-top: 3.5%;
+    z-index: 999;
+}
+
+.Login_popUp_closeBtn{
+    width: 100%;
+    display: flex;
+}
+
+.Login_popUp_closeBtn button{
+    padding: 5px 13px;
+    border-radius: 50%;
+    margin-top: -15px;
+    background-color: rgb(255, 255, 255);
+    color: #333;
+    font-size: 19px;
+    font-weight: 600;
+    border: 0;
+    margin-left: -10px;
+    
+}
+
+.login_PopUp_Header{
+    background-image: url("https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/interior-designer-near-me-1668702759-oSI2D/banner-1668702771-tryh1/ec-desk-1692455434-bnM9X.jpg");
+    background-size: cover;
+    height: 150px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+
+.Login_Pop_Box{
+    width: 450px;
+    height: 600px;
+    background-color: #fff;
+    margin: auto;
+}
+
+.login_PopUp_Form{
+    height: fit-content;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-top-left-radius:40px 25px ;
+    border-top-right-radius: 25px 40px;
+}
+
+.login_PopUp_Form form{
+    border: 0;
+    padding: 10px 20px;
+}
+
+.login_PopUp_Form form input{
+    border: 1px solid grey;
+    width: 100%;
+    padding: 7px 15px;
+    margin-top: 15px;
+}
+
+.form-check{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    margin: auto;
+    width: 100%;
+}
+
+.form-check-label{
+    display: flex;
+    text-align: left;
+    width: 95%;
+    margin-left: -30px;
+    color: black;
+}
+
+.popUp_Form_Btn{
+    width: 90%;
+    padding: 7px;
+    background: rgb(235, 29, 70);
+    border: 1px solid rgb(235, 29, 70);
+    border-radius: 22px;
+    margin: 15px 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.popUp_Form_TC{
+    font-size: 14px;
+    color: black;
+}
+
+.popUp_Form_TC a{
+    color: rgb(235, 29, 70);
+    text-decoration: none;
+}
+
+.popUp_Form_TC a:hover{
+    text-decoration: underline;
+    color: rgb(232, 2, 48);
+}

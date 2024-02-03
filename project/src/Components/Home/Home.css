@@ -6,138 +6,6 @@
     box-sizing: border-box;
 }
 
-.home{
-    margin-bottom: 50px;
-}
-
-.banner{
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    /* position: relative; */
-    overflow: hidden;
-    margin-bottom: 50px;
-}
-
-.slider{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top:0;
-}
-
-#slideTag{
-    width: 100%;
-    height: 100%;
-}
-
-.overlay{
-    width: 100%;
-    height: 100vh;
-    /* background: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.7)); */
-    position: absolute;
-    top: 0;
-}
-
-.content{
-    width: 60%;
-    margin: 160px auto 0;
-    text-align: center;
-    color: #222;
-
-}
-
-.content h2{
-   font-size: 60px;    
-}
-
-.content p{
-    width: 80%;
-    margin: 20px auto 100px;
-    font-weight: 100;
-    line-height: 25px;
-}
-
-.banner-btn{
-    width: 150px;
-    padding: 10px 0;
-    text-align: center;
-    margin: 0 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid #fe7250;
-    background: #fe7250;
-    color: #223;
-    cursor: pointer;
-    transition: background 0.5s;
-}
-
-.banner-btn:hover{
-    background: transparent;
-    border: 2px solid #333;
-}
-
-.btn2{
-    background: transparent;
-    border: 2px solid #333;
-}
-
-.btn2:hover{
-    background: #fe7250;
-    border: 2px solid #fe7250;
-}
-
-.popup-logIn-Title{
-    display: flex;
-    /* justify-content: center; */
-    width: 90%;
-}
-
-.popup-logIn-Title p{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 18px;
-    margin-left: 50px;
-    font-size: larger;
-    font-weight: 600;
-}
-
-.popup-logIn-Title button{
-    display: flex;
-    justify-content: right;
-    /* width: 5%; */
-    width: 35px;
-    height: 35px;
-    padding: 12px;
-    border-radius: 50%;
-    text-align: center;
-    align-items: center;
-    margin-right: -30px;
-    margin-top: 10px;
-    border: none;
-    background: transparent;
-    /* font-weight: 600; */
-    color: #727070;
-    font-size: 18px;
-}
-
-.popup-logIn-Title button:hover{
-    background: white;
-    color: black;
-}
-
-
-
-.popup-logIn-form{
-    height: 413.5px;
-    background-color: white;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    margin-top: 20px;
-
-}
-
 
 /* -------- modal -box --------- */
 
@@ -211,7 +79,6 @@
 }
 
 .wrap-slide{
-    /* display: flex; */
     overflow: hidden;
     white-space: nowrap;
     position: relative;
@@ -277,18 +144,26 @@
     }
 }
 
+/*  ----------------- Store Location ----------------- */
+
+.storeLocation{
+    background: whitesmoke;
+}
+
 
 /* -----------Catagory ---------------- */
 .Catagory p{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 20px;   */
+    /* margin: 0;   */
+
 }
 
 .Catagory .cat-Head-p{
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 550;
+    font-family: "roboto", sans-serif;
     color: #3e3d3d;
     margin-bottom: 5px;
 }
@@ -410,9 +285,10 @@
     box-sizing: content-box;
     display: flex;
     justify-content: center;
-    font-size: 45px;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 550;
     height: 50px;
+    font-family: "roboto", sans-serif;
 }
 
 .second-sent{
@@ -466,123 +342,14 @@ span{
     margin-top: 5px;
 }
 
-/* ----------------- CARD ------------------- */
-
-.calculation-Cards{
-    width: 100%;
-    height: 350px;
-    padding: 20px 70px;
-}
-
-.cal-Card{
-    width: 400px;
-    height: 300px;
-    background: white;
-    border-radius: 20px;
-    margin: 20px;
-    box-shadow:  0.1px 2px 2px 2px rgba(0, 0, 0, 0.1) ;
-    transition: background 0.5s transform 0.5s;
-}
-
-.cal-Card:hover{
-    transform: translateY(-10px);
-    box-shadow:  2px 2px 8px 1px rgba(0,0,0, 0.3) ;
-}
-
-.iCon{
-    display: flex;
-}
-
-.cal-Icon1{
-    margin: 20px;
-    display: flex;
-    width: 50%;
-}
-
-.cal-Icon1 div{
-    background: rgb(226, 223, 223);
-    border-top-right-radius: 50px 25px;
-    border-top-left-radius: 40px 50px;
-    border-bottom-left-radius: 50px 30px;
-    border-bottom-right-radius: 40px 50px;
-}
-
-.cal-Icon1 img{
-    width: 80px;
-    height: 80px;
-}
-
-.cal-Icon2{
-    display: flex;
-    justify-content: right;
-    width: 50%;
-    margin: 20px;
-}
-
-.cal-Icon2 div{
-    width: 80px;
-    height: 80px;
-    background: rgb(226, 223, 223);
-    border-radius: 50%;
-    padding: 12px;
-}
-
-.cal-Icon2 img{
-    width: 60px;
-    height: 60px;
-}
-
-.cal-Name{
-    margin: 20px 10px;
-    height: 70px;
-}
-
-.cal-Name .cal-p{
-    font-size: 22px;
-    line-height: 28px;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-
-.cal-btn{
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-
-.cal-btn button{
-    width: 90%;
-    height: 40px;
-    border-radius: 20px;
-    outline: 0;
-    border: 0;
-    background:  rgb(220, 40, 23);
-    color: #fff;
-}
-
-.cal-btn button:hover{
-    background: rgb(199, 35, 20);;
-}
-
-.cal-btn button p{
-    margin-bottom: 0;
-    display: inline-flex;
-    justify-content: center;
-    margin-right: 5px;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: .75px;
-    line-height: 24px;   
-}
-
-/* -----------------------------*/
+/* ------------ Collage Banner -----------------*/
 
 .collage-banner{
     background: whitesmoke;
 }
 
 .carousel {
-    margin: 10px 80px;
+    margin: 0 80px;
     display: flex;
     padding: 50px 0;
 }
@@ -604,18 +371,22 @@ span{
 }
 
 
-/* ----------------- */
+/* ----------------- ACCORDION --------------------- */
 
 .asked-que-title{
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 550;
     margin: 50px 0;
+    font-family: "roboto", sans-serif;
 }
 
 .accordion{
     margin: 0 20%;
 }
 
-.accordion-item{
+/* ----------------------- Footer Image Pop up Section -------------------------- */
+
+.footerImagePopUp{
+    margin-top: 20px;
 }

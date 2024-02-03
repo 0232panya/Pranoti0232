@@ -26,7 +26,7 @@
 .card:hover{
     transform: translateY(-5px);
     box-shadow:  2px 2px 8px 1px rgba(0,0,0, 0.3) ;
-    .card-button{background: rgb(246, 209, 217);}
+    .card-button{background: rgb(255, 237, 241);}
     .card-button svg{color: crimson;}
 }
 
@@ -76,12 +76,12 @@
 .imagePge-Cards{
     width: 300px;
     height: 300px;
-    border-radius: 18px;
-    margin: 20px 0;
+    /* border-radius: 12px; */
+    /* margin: 20px 0; */
 }
 
 .imagePge-card img{
     width: 300px;
     height: 300px;
-    border-radius: 18px;
+    /* border-radius: 12px; */
 }

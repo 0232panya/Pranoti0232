@@ -10,6 +10,9 @@ import axios from 'axios'
 import ProfessionalPage from './Components/ProfessionalPage/ProfessionalPage.js';
 import LogIn from './Components/Form/LogIn.js';
 import SignUp from './Components/Form/SignUp.js';
+import StoreLocation from './Components/Store_Location/StoreLocation.js';
+import PriceCalculator from './Components/Price_Calculator/PriceCalculator.js';
+import LogInPopUp from './Components/Login_PopUp/LogInPopUp.js';
 
 
 function App() {
@@ -43,39 +46,30 @@ function App() {
       })
   },[cardName])
 
-  //let consta = "62syaA0W_UwaoHXITba8GwmPkFnbXHH0yNYtI8RILwI";
 
-   //const URL = "https://api.unsplash.com/search/photos?page=1&query=interior_design&client_id=${process.env.REACT_APP_UNSPLASH_KEY}";
-
-  // useEffect(()=>{
-  //   fetch(`https://api.unsplash.com/search/photos?page=1&query=interior_design&client_id=${process.env.REACT_APP_UNSPLASH_KEY}`)
-  //     .then((result) => result.json())
-  //     .then((result) => {
-  //       setPhotos(result);
-  //       console.log(photos);        
-  //     });
-  // },[]);
 
 
   return (
     
     <div className='app'>
-      {/* <Form/> */}
       
       
       <Header image={image} result={result} />
-      {/* <Home image={image}/> */}
-      {/* <ImagePage /> */}
-      {/* <ProfessionalPage image={image} /> */}
      
       <Routes> 
         <Route path='/Header' element={<Header />} />
        
-        <Route path='/' element={<Home image={image} />}  />
+        <Route path='/' element={<Home image={image}  />}  />
         
         <Route path='/:cardName' element={<ImagePage image={image} result={result} />} />
 
-        <Route path='/Professional_Page' element={<ProfessionalPage />} />
+        <Route Path="/Store_Location" element={<StoreLocation />} />
+
+        <Route path='/popup-login' element={<LogInPopUp /> } />
+
+        <Route path='/interior_design_near_me' element={<ProfessionalPage />} />
+
+        <Route path='/Price_Calculate' element={<PriceCalculator />} />
 
         <Route path='/Login' element={<LogIn />} />
 

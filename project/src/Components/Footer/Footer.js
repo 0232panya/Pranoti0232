@@ -55,7 +55,7 @@ function Footer(){
             </div> */}
             <div className='fright'> 
                 <div className='fright-first-col'>
-                    <p className='fright-p-Title'>Company</p>
+                    <div className='fright-p-Title'>Company</div>
                     <p>about</p>
                     <p>Press Info</p>
                     <p>Career</p>
@@ -64,13 +64,13 @@ function Footer(){
                     <p>CopyRight & Trademark</p>
                 </div>
                 <div className='fright-second-col'>
-                    <p className='fright-p-Title'>Design</p>
+                    <div className='fright-p-Title'>Design</div>
                     <p>Interior Home Design</p>
                     <p>Commercial Interiors</p>
                     <p>Stores</p>
                 </div>
                 <div className='fright-third-col'>
-                    <p className='fright-p-Title'>Contact</p>
+                    <div className='fright-p-Title'>Contact</div>
                     <p><div style={{fontWeight:"550"}}>Email -</div></p>
                         <a href='/#'>interiordesign@gmail.com</a>
                     
